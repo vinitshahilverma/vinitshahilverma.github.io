@@ -56,32 +56,66 @@
          }
          #about>h1:nth-child(2){
                font-size: 60px;
+              
          }
          #about>h1:nth-child(3){
              font-size: 50px;
+             color: red;
          }
          #about h1+p{
             margin-top: 80px;
             font-size: 30px;
          }
          #image>img{
+            display: block;
             border-radius:30%;
          }
+         #image>img:hover{
+            transform: rotateY(180deg);
+            transition: transform 0.8%;
+         }
          #skill{
-            border: 1px solid red;
-            width:80%;
+            width:70%;
             margin:auto;
-            margin-top:80px;
+            margin-top:200px;
+           
+            border-radius: 30px;
+            height:250px;
             display: grid;
             grid-template-columns: repeat(5,1fr);
             grid-template-rows: repeat(1,100px) ; 
             justify-content: space-between;
+            gap:20px;
             align-items: center;
          }
-         #skill>img{
-            display: block;
-            width:50%;
+         #skill> div{
+            border: 5px solid black;  
          }
+         #skill>div:hover{
+           
+            border:2px solid orange;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+         }
+         #skill img{
+            display: block;
+            width:100%;
+            border-radius: 30px;
+         }
+         #skill img:hover{
+            background-color: white;
+         }
+         #skill>div:nth-child(4)>img{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width:100%;
+         }
+         #skill>div:nth-child(5)>img{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width:100%;
+         }
+         
          @media all and (min-width:768px) and (max-width:1024px){
             
            #footer{
@@ -111,17 +145,17 @@
       <div id="image"><img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
       <div id="about">
           <h1>Hi,</h1>
-          <h1>Shahil Verma</h1>
+          <h1>I am Shahil Verma</h1>
           <h1>Java Backend Developer</h1>
           <p>A Passionate aspiring JAVA Backend developer with lots of energy. Always excited about coding. A detail and process-oriented person has the ability to cope with difficult situations. Punctual person and a team player. Looking for an organization where I can give my best.</p>
       </div>   
     </div>
     <div id="skill">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" alt="java">
-        <img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="html">
-        <img src="https://toppng.com/uploads/preview/html-css-js-icons-11563328364gmstz4ubs9.png" alt="css">
-        <img src="https://w7.pngwing.com/pngs/503/848/png-transparent-javascript-computer-icons-software-developer-cascading-style-sheets-javascript-logo-angle-text-rectangle.png" alt="javascript">
-        <img src="https://e7.pngegg.com/pngimages/747/798/png-clipart-mysql-mysql.png" alt="sql">
+       <div><img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" alt="java"></div> 
+        <div><img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="html"></div>
+       <div><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png" alt="css"></div> 
+      <div><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="javascript"></div>
+       <div><img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="sql"></div> 
     </div>
 
       <div id="footer"></div> 
