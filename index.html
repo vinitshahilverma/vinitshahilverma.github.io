@@ -34,13 +34,7 @@
             color: red;
             border-bottom:2px solid red;
          }
-         #footer{
-             border: 1px solid black;
-             background-color: teal;
-             width: 100%;
-             height:250px;
-             margin-top:20px;
-         }
+         
          #image{
             display: block ;
             margin-left: 100px;
@@ -115,6 +109,61 @@
             padding-bottom: 30px;
             width:100%;
          }
+         #projects{
+            width:70%;
+            margin:auto;
+            margin-top: 160px;
+            display:grid;
+            gap:30px;
+         }
+         #projects img{
+            border: 3px solid black;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            width:100%;
+         }
+         #footer{
+             border: 1px solid black;
+             background-color: teal;
+             width: 100%;
+             height:250px;
+             margin-top:20px;
+         }
+         #link{
+             width:30%;
+            margin:auto;
+            margin-top:6%;
+             display:grid;
+             justify-content: center;
+             align-items: center;
+             grid-template-columns: repeat(4,1fr);
+         }
+         #footer img{
+            display:block;
+            margin: auto;
+            width:40%;
+            background-color: teal;
+         }
+         #link>div{
+            background-color: teal;
+            margin-left: -50px;
+         }
+         #resume{
+            height:50px;
+            margin-top: 500px;
+            position: relative;
+            left:-250px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 10px;
+            font-size: 16px;
+         }
+         #resume:hover{
+            background-color: rgb(67, 9, 9);
+            cursor: pointer;
+         }
          
          @media all and (min-width:768px) and (max-width:1024px){
             
@@ -143,6 +192,7 @@
       </div>
 
       <div id="image"><img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
+         <button id="resume">Resume</button>
       <div id="about">
           <h1>Hi,</h1>
           <h1>I am Shahil Verma</h1>
@@ -158,6 +208,27 @@
        <div><img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="sql"></div> 
     </div>
 
-      <div id="footer"></div> 
+    <div id="projects">
+      <div>
+         <img src = "./images/Screenshot (89).png" alt = "intern theory">
+         <button>Source Code</button>
+         <button>Deployed Link</button>
+      </div>
+      <div>
+         <img src = "./images/Screenshot (90).png" alt = "gym wolf">
+         <button>Source Code</button>
+         <button>Deployed Link</button>
+      </div>
+    </div>
+
+      <div id="footer">
+       <div id="link">
+         <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></div>
+       <div><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png" alt="whatsapp"></div>
+       <div><img src="https://assets.stickpng.com/images/584856b4e0bb315b0f7675ac.png" alt=""></div>
+       <div><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></div>
+       </div>
+       
+      </div> 
 </body>
 </html>
