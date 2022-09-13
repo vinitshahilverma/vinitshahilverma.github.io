@@ -63,10 +63,12 @@
          #image>img{
             display: block;
             border-radius:30%;
+           
          }
          #image>img:hover{
             transform: rotateY(180deg);
             transition: transform 0.8%;
+           
          }
          #skill{
             width:70%;
@@ -116,6 +118,12 @@
             display:grid;
             gap:30px;
          }
+         #projects>div{
+           display: grid;
+           grid-template-columns: 60% 40%;
+           gap:40px;
+            
+         }
          #projects img{
             border: 3px solid black;
             border-bottom-left-radius: 30px;
@@ -158,12 +166,20 @@
             border: none;
             border-radius: 12px;
             padding: 10px;
-            font-size: 16px;
+            font-size: 18px;
          }
          #resume:hover{
             background-color: rgb(67, 9, 9);
             cursor: pointer;
          }
+         .verma{
+            padding-left: 20px;
+            padding-top: 20px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         }
+         
          
          @media all and (min-width:768px) and (max-width:1024px){
             
@@ -209,15 +225,27 @@
     </div>
 
     <div id="projects">
-      <div>
-         <img src = "./images/Screenshot (89).png" alt = "intern theory">
-         <button>Source Code</button>
-         <button>Deployed Link</button>
+      <div >
+         <img src = "./images/ezgif.com-gif-maker.gif" alt = "intern theory">
+         <div class="verma">
+            <h2>Intern Theory</h2>
+            <h4>It's a website to provide the solution for those who are serching for the jobs and interships. You can search jobs and Internships by
+               location, By your profile type and And by job type like full time, part time or work from home.
+            </h4>
+            <h5>It was a collaborative of 7 members and we completed the project in 4 days</h5>
+            <button>Source Code</button>
+            <button>Deployed Link</button></div>
+         
       </div>
       <div>
-         <img src = "./images/Screenshot (90).png" alt = "gym wolf">
-         <button>Source Code</button>
-         <button>Deployed Link</button>
+         <img src = "./images/ezgif.com-gif-maker (1).gif" alt = "gym wolf">
+         <div class = "verma">
+            <h2>Gym wolf</h2>
+            <h4>Gymwolf is a workout tracking tool. Add workouts, create your own customized workout plans or find suitable plan from other users. Accomplish your goals with motivation from personal trainer and committed training.</h4>
+            <h5>It was a collaborative of 5 members and we completed the project in 4 days</h5>
+            <button>Source Code</button>
+            <button>Deployed Link</button>
+         </div>
       </div>
     </div>
 
