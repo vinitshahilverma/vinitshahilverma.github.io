@@ -11,7 +11,7 @@
             padding: 0px;
             box-sizing: border-box;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgb(219, 202, 202);
+            background-color: rgb(203, 202, 197);
          }
          #navbar{
             border: 1px solid;
@@ -25,12 +25,37 @@
             align-items: center;
             
          }
-         #navbar>h3{
+         #navbar>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        #navbar>div:first-child>h2{
+         background-color: black;
+         font-style: italic;
+        }
+        #navbar>div:first-child>h2:first-child{
+         color: red;
+         background-color: black;
+         font-size: 35px;
+        }
+        #navbar>div:first-child>h2:last-child{
+         background-color: black;
+         font-size: 35px;
+         color:white;
+        }
+         #navbar>div:last-child{
+            background-color: black;
+            width:30%;
+            display: flex;
+            justify-content: space-between;
+         }
+         #navbar h3{
              color: white;
              background-color: black;
              border: 2px solid black;
          }
-         #navbar>h3:hover{
+         #navbar h3:hover{
             color: red;
             border-bottom:2px solid red;
          }
@@ -85,10 +110,10 @@
             align-items: center;
          }
          #skill> div{
-            border: 5px solid black;  
+            border: 5px solid black;
+            border-radius: 12px;  
          }
-         #skill>div:hover{
-           
+         #skill>div:hover{  
             border:2px solid orange;
             border-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -111,24 +136,51 @@
             padding-bottom: 30px;
             width:100%;
          }
+         #hours{
+            width: 70%;
+            height:250px;
+            margin: auto;
+            border-radius: 20px;
+         }
+         #hours>img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+         }
+         #github{
+            width: 70%;
+            height:250px;
+            margin: auto;
+            margin-top:30px;
+            border-radius: 20px;
+         }
+         #github>img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+         }
          #projects{
             width:70%;
             margin:auto;
             margin-top: 160px;
             display:grid;
             gap:30px;
+            
          }
          #projects>div{
            display: grid;
            grid-template-columns: 60% 40%;
            gap:40px;
-            
+           height:350px;
          }
          #projects img{
             border: 3px solid black;
             border-bottom-left-radius: 30px;
             border-top-right-radius: 30px;
             width:100%;
+            height:100%;
          }
          #footer{
              border: 1px solid black;
@@ -137,10 +189,22 @@
              height:250px;
              margin-top:20px;
          }
+         #footer>div:first-child{
+            display: flex;
+            width:60%;
+            margin: auto;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 30px;
+            background-color: teal;
+         }
+         #footer>div:first-child>h3{
+             background-color: teal;
+         }
          #link{
              width:30%;
             margin:auto;
-            margin-top:6%;
+            margin-top:30px;
              display:grid;
              justify-content: center;
              align-items: center;
@@ -179,7 +243,28 @@
             border-bottom-right-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
          }
-         
+         .verma>h4{
+            margin-top: 10px;
+         }
+         .verma>h5{
+            margin-top: 15px;
+         }
+         .verma button{
+            margin-top: 25px;
+            border-radius: 3px;
+            height:30px;
+            width:100px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: skyblue;
+         }
+         .verma button:hover{
+            background-color: bisque;
+            cursor: pointer;
+         }
+         .verma button:last-child{
+            margin-left: 100px;
+         }
          
          @media all and (min-width:768px) and (max-width:1024px){
             
@@ -201,10 +286,16 @@
 </head>
 <body>
       <div id="navbar">
-        <h3>About</h3>
-        <h3>Skills</h3>
-        <h3>Projects</h3>
-        <h3>Contact</h3>
+         <div><h2>Shahil</h2>
+            <h2>Verma</h2>
+         </div>
+         <div>
+            <h3>About</h3>
+            <h3>Skills</h3>
+            <h3>Projects</h3>
+            <h3>Contact</h3>
+         </div>
+        
       </div>
 
       <div id="image"><img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
@@ -223,6 +314,8 @@
       <div><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="javascript"></div>
        <div><img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="sql"></div> 
     </div>
+    <div id="hours"><img src="./images/Screenshot (120).png" alt="skills"></div>
+    <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div>
 
     <div id="projects">
       <div >
@@ -233,6 +326,7 @@
                location, By your profile type and And by job type like full time, part time or work from home.
             </h4>
             <h5>It was a collaborative of 7 members and we completed the project in 4 days</h5>
+            <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
             <button>Source Code</button>
             <button>Deployed Link</button></div>
          
@@ -243,6 +337,7 @@
             <h2>Gym wolf</h2>
             <h4>Gymwolf is a workout tracking tool. Add workouts, create your own customized workout plans or find suitable plan from other users. Accomplish your goals with motivation from personal trainer and committed training.</h4>
             <h5>It was a collaborative of 5 members and we completed the project in 4 days</h5>
+            <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
             <button>Source Code</button>
             <button>Deployed Link</button>
          </div>
@@ -250,13 +345,16 @@
     </div>
 
       <div id="footer">
+         <div>
+            <h3>Email:- vinitshahilverma@gamil.com</h3>
+            <h3>whatsapp:-+91 7858869609</h3>
+         </div>
        <div id="link">
          <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></div>
        <div><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png" alt="whatsapp"></div>
-       <div><img src="https://assets.stickpng.com/images/584856b4e0bb315b0f7675ac.png" alt=""></div>
-       <div><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></div>
+       <div><img src="https://pnggrid.com/wp-content/uploads/2021/12/Email-Icon-Png-Transparent.png" alt="email"></div>
+       <div><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></div>
        </div>
-       
       </div> 
 </body>
 </html>
