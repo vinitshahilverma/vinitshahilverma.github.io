@@ -11,7 +11,7 @@
             padding: 0px;
             box-sizing: border-box;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgb(203, 202, 197);
+            background-color: rgba(206, 226, 135, 0.632);
          }
          #navbar{
             border: 1px solid;
@@ -187,7 +187,8 @@
              background-color: teal;
              width: 100%;
              height:250px;
-             margin-top:20px;
+             margin-top:150px;
+            
          }
          #footer>div:first-child{
             display: flex;
@@ -265,6 +266,62 @@
          .verma button:last-child{
             margin-left: 100px;
          }
+         .intro{
+            margin-left:14%;
+            font-size: 42px;
+            color:red;
+            font-style: italic;
+            margin-top: 100px;
+            margin-bottom: -100px;
+         }
+         #contact{
+            margin-top: 150px;
+            width:350px;
+            margin-left: 40%;
+            display: flex;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            display: none;
+         }
+         #contact h1{
+            text-align: center;
+         }
+         #contact input{
+            display: block;
+            margin-top: 20px;
+            height:30px;
+            width:300px;
+            border-radius: 5px;
+            padding-left: 20px;
+         }
+         #form>input:nth-child(5){
+           height:80px;
+           padding-top: ;
+         }
+         #form>input:nth-child(6){
+            height:40px;
+            font-size: 20px;
+            font-weight: 700;
+            width:100px;
+            padding: 0px;
+            background-color: skyblue;
+            margin-left:34%;
+         }
+         #touch{
+            margin-top: 150px;
+            margin-bottom: 0px;
+            margin-left: 30%;
+            background-color: rgb(31, 187, 187);
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px;
+         }
+         #touch:hover{
+            cursor: pointer;
+         }
          
          @media all and (min-width:768px) and (max-width:1024px){
             
@@ -290,10 +347,10 @@
             <h2>Verma</h2>
          </div>
          <div>
-            <h3>About</h3>
-            <h3>Skills</h3>
-            <h3>Projects</h3>
-            <h3>Contact</h3>
+            <a href="#image"><h3>About</h3></a>
+            <a href="#skill"><h3>Skills</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
+            <a href="#footer"><h3>Contact</h3></a>
          </div>
         
       </div>
@@ -307,6 +364,8 @@
           <p>A Passionate aspiring JAVA Backend developer with lots of energy. Always excited about coding. A detail and process-oriented person has the ability to cope with difficult situations. Punctual person and a team player. Looking for an organization where I can give my best.</p>
       </div>   
     </div>
+    
+    <h1 class="intro"><u>Skills</u></h1>
     <div id="skill">
        <div><img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" alt="java"></div> 
         <div><img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="html"></div>
@@ -314,9 +373,11 @@
       <div><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="javascript"></div>
        <div><img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="sql"></div> 
     </div>
+    
     <div id="hours"><img src="./images/Screenshot (120).png" alt="skills"></div>
     <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div>
-
+    
+    <h1 class="intro"><u>My Projects</u></h1>
     <div id="projects">
       <div >
          <img src = "./images/ezgif.com-gif-maker.gif" alt = "intern theory">
@@ -344,17 +405,40 @@
       </div>
     </div>
 
+      <h1 class="intro"><u>Contact Me</u></h1>
+       <button id="touch">Click Here to get In touch >>></button>
+      <div id="contact"><form id="form">
+         <h1>Get In Touch</h1>
+         <input type="text" id="name" placeholder="Your Name">
+         <input type="email" id="email" placeholder="Your Email">
+         <input type="number" id="phone" placeholder="Your phone Number">
+         <input type="text" id="message" placeholder="Message">
+         <input type="submit">
+      </form></div>
       <div id="footer">
          <div>
             <h3>Email:- vinitshahilverma@gamil.com</h3>
             <h3>whatsapp:-+91 7858869609</h3>
          </div>
        <div id="link">
-         <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></div>
-       <div><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png" alt="whatsapp"></div>
-       <div><img src="https://pnggrid.com/wp-content/uploads/2021/12/Email-Icon-Png-Transparent.png" alt="email"></div>
-       <div><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></div>
+         <div><a href="www.linkedin.com/in/shahil-verma-3690a31a9"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></a></div>
+       <div><a href="https://api.whatsapp.com/send/?phone=7858869609&text&app_absent=0"><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png" alt="whatsapp"></a></div>
+       <div><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfGgTxGllMwXTdcbNdJshbNxrcjPlWnFmNrZLjqQkpBkjcnpmJTWDfXHMjXTbgwmXRJH"><img src="https://pnggrid.com/wp-content/uploads/2021/12/Email-Icon-Png-Transparent.png" alt="email"></a></div>
+       <div><a href="https://github.com/vinitshahilverma"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a></div>
        </div>
       </div> 
 </body>
 </html>
+
+<script>
+       document.querySelector("#touch").addEventListener("click",myFun);
+
+      function myFun(){
+          
+         let que = document.querySelector("#touch");
+        
+         que.style.display = "none";
+         
+         document.querySelector("#contact").style.display = "flex";
+      }
+</script>
