@@ -51,9 +51,11 @@
             justify-content: space-between;
          }
          #navbar h3{
+             text-decoration: none;
              color: white;
              background-color: black;
              border: 2px solid black;
+             
          }
          #navbar h3:hover{
             color: red;
@@ -65,6 +67,7 @@
             margin-left: 100px;
             margin-top : 50px;
             display: flex;
+            z-index: -1;
          }
          #about{
             padding-left: 120px;
@@ -222,16 +225,16 @@
             margin-left: -50px;
          }
          #resume{
-            height:50px;
-            margin-top: 500px;
             position: relative;
-            left:-250px;
+            top:550px;
+            left:260px;
             background-color: red;
             color: white;
             border: none;
             border-radius: 12px;
             padding: 10px;
             font-size: 18px;
+            z-index: 10;
          }
          #resume:hover{
             background-color: rgb(67, 9, 9);
@@ -250,6 +253,12 @@
          .verma>h5{
             margin-top: 15px;
          }
+         .verma div{
+          
+            display:flex;
+            width: 100%;
+            justify-content: space-evenly;
+         }
          .verma button{
             margin-top: 25px;
             border-radius: 3px;
@@ -263,9 +272,7 @@
             background-color: bisque;
             cursor: pointer;
          }
-         .verma button:last-child{
-            margin-left: 100px;
-         }
+        
          .intro{
             margin-left:14%;
             font-size: 42px;
@@ -322,15 +329,49 @@
          #touch:hover{
             cursor: pointer;
          }
+         #msg{
+            width:330px;
+            text-align: center;
+            margin-top:20px;
+            margin-left: 40%;
+            background-color: aquamarine;
+         }
+         a{
+            text-decoration: none;
+         }
          
-         @media all and (min-width:768px) and (max-width:1024px){
+         @media all and (min-width:601px) and (max-width:900px){
+            #navbar{
+               width:100%;
+            }
+            #navbar>div:last-child{
+               display: none;
+            }
+            
+            #image{
+               flex-direction: column;
+               width:90%;
+               margin:auto;
+               margin-top: 50px;
+            } 
+            #image>img{
+               width:70%;
+               margin:auto;
+            }
+            #about{
+               padding: 20px;
+            }
+             #resume{
+               
+               margin-left:5%;
+             }
             
            #footer{
                height:120px;
            } 
          }
 
-         @media all and (min-width:320px) and (max-width:767px){
+         @media all and (min-width:280px) and (max-width:600px){
             #navbar{
                 height:40px;
             }
@@ -352,11 +393,10 @@
             <a href="#projects"><h3>Projects</h3></a>
             <a href="#footer"><h3>Contact</h3></a>
          </div>
-        
       </div>
-
+      
+      <a href="Shahil_Verma_Resume.pdf" download><button id="resume">Resume</button></a>
       <div id="image"><img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
-         <button id="resume">Resume</button>
       <div id="about">
           <h1>Hi,</h1>
           <h1>I am Shahil Verma</h1>
@@ -388,9 +428,9 @@
             </h4>
             <h5>It was a collaborative of 7 members and we completed the project in 4 days</h5>
             <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
-            <button>Source Code</button>
-            <button>Deployed Link</button></div>
-         
+            <div><a href="https://github.com/vinitshahilverma/Intern-Theory-Project"><button>Source Code</button></a>
+               <a href="https://adorable-nougat-3048be.netlify.app/"><button>Deployed Link</button></a></div>
+         </div>
       </div>
       <div>
          <img src = "./images/ezgif.com-gif-maker (1).gif" alt = "gym wolf">
@@ -399,30 +439,33 @@
             <h4>Gymwolf is a workout tracking tool. Add workouts, create your own customized workout plans or find suitable plan from other users. Accomplish your goals with motivation from personal trainer and committed training.</h4>
             <h5>It was a collaborative of 5 members and we completed the project in 4 days</h5>
             <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
-            <button>Source Code</button>
-            <button>Deployed Link</button>
+            <div><a href="https://github.com/vinitshahilverma/rough-stone-6895"><button>Source Code</button></a>
+               <a><button>Deployed Link</button></a></div>
          </div>
       </div>
     </div>
 
       <h1 class="intro"><u>Contact Me</u></h1>
        <button id="touch">Click Here to get In touch >>></button>
-      <div id="contact"><form id="form">
+
+        <div id="contact"><form id="form" name="submit-to-google-sheet">
          <h1>Get In Touch</h1>
-         <input type="text" id="name" placeholder="Your Name">
-         <input type="email" id="email" placeholder="Your Email">
-         <input type="number" id="phone" placeholder="Your phone Number">
-         <input type="text" id="message" placeholder="Message">
+         <input type="text" id="name" name="Name" required placeholder="Your Name">
+         <input type="email" id="email" name="Email" required placeholder="Your Email">
+         <input type="number" id="phone" name="phone" placeholder="Your phone Number">
+         <input type="text" id="message" name="Message" placeholder="Message">
          <input type="submit">
-      </form></div>
+      </form>
+   </div>
+   <div id="msg"></div>
       <div id="footer">
          <div>
             <h3>Email:- vinitshahilverma@gamil.com</h3>
             <h3>whatsapp:-+91 7858869609</h3>
          </div>
        <div id="link">
-         <div><a href="www.linkedin.com/in/shahil-verma-3690a31a9"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></a></div>
-       <div><a href="https://api.whatsapp.com/send/?phone=7858869609&text&app_absent=0"><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c543.png" alt="whatsapp"></a></div>
+         <div><a href="https://www.linkedin.com/in/shahil-verma/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></a></div>
+       <div><a href="https://api.whatsapp.com/send/?phone=7858869609&text&app_absent=0"><img src="./images/whatsapp.png" alt="whatsapp"></a></div>
        <div><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfGgTxGllMwXTdcbNdJshbNxrcjPlWnFmNrZLjqQkpBkjcnpmJTWDfXHMjXTbgwmXRJH"><img src="https://pnggrid.com/wp-content/uploads/2021/12/Email-Icon-Png-Transparent.png" alt="email"></a></div>
        <div><a href="https://github.com/vinitshahilverma"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a></div>
        </div>
@@ -441,4 +484,22 @@
          
          document.querySelector("#contact").style.display = "flex";
       }
+
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwISDOZwNQFfmsXehyYyUGxObY5en_hmykVxV2pmye9SV6hSt8n_4h7BJ8NlqbrAnEcCQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent Successfully";
+        setTimeout(()=>{
+            msg.innerHTML="";
+        },5000);
+        form.reset();
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
