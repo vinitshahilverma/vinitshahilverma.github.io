@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShahilVerma_Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
     <style>
          *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgba(206, 226, 135, 0.632);
+            /* background-color: rgba(206, 226, 135, 0.632); */
+            background-color: rgba(46, 75, 75, 0.719);
+            color: white;
          }
          #navbar{
             border: 1px solid;
@@ -23,7 +31,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            
+            z-index: 10;
          }
          #navbar>div{
             display: flex;
@@ -44,7 +52,7 @@
          font-size: 35px;
          color:white;
         }
-         #navbar>div:last-child{
+         #navbar>div:nth-child(2){
             background-color: black;
             width:30%;
             display: flex;
@@ -67,7 +75,7 @@
             margin-left: 100px;
             margin-top : 50px;
             display: flex;
-            z-index: -1;
+           
          }
          #about{
             padding-left: 120px;
@@ -88,21 +96,19 @@
             margin-top: 80px;
             font-size: 30px;
          }
-         #image>img{
+         #image img{
             display: block;
             border-radius:30%;
-           
          }
-         #image>img:hover{
+         #image img:hover{
             transform: rotateY(180deg);
             transition: transform 0.8%;
-           
          }
          #skill{
             width:70%;
             margin:auto;
             margin-top:200px;
-           
+          
             border-radius: 30px;
             height:250px;
             display: grid;
@@ -153,10 +159,11 @@
          }
          #github{
             width: 70%;
-            height:250px;
+            height:300px;
             margin: auto;
             margin-top:30px;
             border-radius: 20px;
+          
          }
          #github>img{
             display: block;
@@ -170,7 +177,6 @@
             margin-top: 160px;
             display:grid;
             gap:30px;
-            
          }
          #projects>div{
            display: grid;
@@ -226,23 +232,23 @@
          }
          #resume{
             position: relative;
-            top:550px;
-            left:260px;
+            bottom:15%;
+            margin: auto;
+            display: block;
             background-color: red;
             color: white;
             border: none;
             border-radius: 12px;
             padding: 10px;
             font-size: 18px;
-            z-index: 10;
+            z-index: 1;
          }
          #resume:hover{
             background-color: rgb(67, 9, 9);
             cursor: pointer;
          }
          .verma{
-            padding-left: 20px;
-            padding-top: 20px;
+            padding: 20px;
             border-top-left-radius: 30px;
             border-bottom-right-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -267,6 +273,7 @@
             font-size: 14px;
             font-weight: bold;
             background-color: skyblue;
+            color: black;
          }
          .verma button:hover{
             background-color: bisque;
@@ -339,12 +346,33 @@
          a{
             text-decoration: none;
          }
+         #toogle{
+            position: absolute;
+            right:20px;
+         }
+         #t{
+            color: red;
+            display: none;
+         }
+         #sidemenu{
+            height:200px;
+            display: none;
+         }
+         #sidemenu h3{
+            margin-left: 40px;
+            line-height: 50px;
+            font-size: 30px;
+         }
          
-         @media all and (min-width:601px) and (max-width:900px){
+         
+         @media all and (min-width:601px) and (max-width:1000px){
+            #t{
+               display: inline;
+            }
             #navbar{
                width:100%;
             }
-            #navbar>div:last-child{
+            #navbar>div:nth-child(2){
                display: none;
             }
             
@@ -354,30 +382,169 @@
                margin:auto;
                margin-top: 50px;
             } 
-            #image>img{
+            #image img{
                width:70%;
                margin:auto;
+               
             }
             #about{
                padding: 20px;
             }
              #resume{
-               
-               margin-left:5%;
+                 margin-top: -80px;
+                 margin-bottom: 80px;
              }
+             #skill{
+               grid-template-columns: repeat(3,1fr);
+               grid-template-rows: repeat(auto,100px) ;
+               gap:80px;
+               width:80%;
+             }
+            #hours{
+               margin-top: 150px;
+               margin-bottom: 50px;
+               width:80%;
+            }
+            #github{
+               height:200px;
+               width:80%;
+            }
+            #projects{
+               width:80%;
+            }
+            #projects>div{
+               grid-template-columns: repeat(1,1fr);
+               grid-template-rows: repeat(auto,1fr);
+               gap:10%;
+            
+            }
+            #projects>div:last-child{
+                 margin-top: 50%;
+                 margin-bottom: 40%;
+            }
+            #contact{
+               margin:auto;
+               margin-top: 30%;
+            }
             
            #footer{
-               height:120px;
+              height:300px;
            } 
+           #footer>div:first-child{
+            width:80%;
+           }
+           #footer>div:first-child>h3{
+             font-size: 18px;
+           }
+           #footer>div:last-child{
+             margin-top:12%;
+              width:60%;
+              justify-content: space-evenly;
+           }
          }
 
          @media all and (min-width:280px) and (max-width:600px){
-            #navbar{
-                height:40px;
+            #t{
+               display: inline;
             }
-             #footer{
-                height:100px;
-             }     
+            #navbar{
+               width:100%;
+            }
+            #navbar>div:nth-child(2){
+               display: none;
+            }
+            
+            #image{
+               flex-direction: column;
+               width:90%;
+               margin:auto;
+               margin-top: 50px;
+            } 
+            #image img{
+               width:70%;
+               margin:auto;
+               
+            }
+            #about{
+               padding: 20px;
+            }
+            #about>h1:first-child{
+               font-size: 35px;
+            }
+            #about>h1:nth-child(2){
+               font-size: 30px;
+            }
+            #about>h1:nth-child(3){
+               font-size: 30px;
+            }
+            #about h1+p{
+               margin-top: 20px;
+               font-size: 18px;
+            }
+             #resume{
+                 /* position:absolute;
+                 left: 35%; */
+                 margin-top: -80px;
+                 margin-bottom: 80px;
+             }
+             #skill{
+               grid-template-columns: repeat(2,1fr);
+               grid-template-rows: repeat(auto,100px) ;
+               gap:80px;
+               width:80%;
+             }
+            #hours{
+               margin-top: 450px;
+               margin-bottom: 50px;
+               width:90%;
+            }
+            #github{
+               height:200px;
+               width:90%;
+            }
+            #projects{
+               width:90%;
+            }
+            #touch{
+               margin-left: 18%;
+            } 
+            #projects>div{
+               
+               grid-template-columns: repeat(1,1fr);
+               grid-template-rows: repeat(1,1fr);
+               gap:10%;
+            
+            }
+            #projects>div:last-child{
+                 margin-top: 50%;
+                 margin-bottom: 40%;
+            }
+            #contact{
+               margin:auto;
+               margin-top: 30%;
+            }
+            
+           #footer{
+              height:300px;
+           } 
+           #footer>div:first-child{
+            width:80%;
+            flex-direction: column;
+           }
+           #footer>div:first-child>h3{
+             font-size: 18px;
+           }
+           #footer img{
+            width:50%;
+           }
+           #link>div{
+            margin-left: -20px;
+           }
+           #footer>div:last-child{
+             margin-top:12%;
+              width:80%;
+              justify-content: space-between;
+           }  
          }
 
     </style>
@@ -393,10 +560,19 @@
             <a href="#projects"><h3>Projects</h3></a>
             <a href="#footer"><h3>Contact</h3></a>
          </div>
+          <div id="toogle"><i id = "t" class="fa-solid fa-bars"></i></div>
+      </div>
+      <div id="sidemenu">
+            <a href="#image"><h3>About</h3></a>
+            <a href="#skill"><h3>Skills</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
+            <a href="#footer"><h3>Contact</h3></a>
       </div>
       
+      <div id="image"><div>
+         <img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
       <a href="Shahil_Verma_Resume.pdf" download><button id="resume">Resume</button></a>
-      <div id="image"><img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
+      </div>
       <div id="about">
           <h1>Hi,</h1>
           <h1>I am Shahil Verma</h1>
@@ -415,7 +591,13 @@
     </div>
     
     <div id="hours"><img src="./images/Screenshot (120).png" alt="skills"></div>
-    <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div>
+    <!-- <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div> -->
+    <div class="calendar" id="github">
+      <!-- Loading stuff -->
+      <!-- Loading the data just for you. -->
+    </div>
+
+
     
     <h1 class="intro"><u>My Projects</u></h1>
     <div id="projects">
@@ -485,6 +667,23 @@
          document.querySelector("#contact").style.display = "flex";
       }
 
+      document.querySelector("#toogle").addEventListener("click",myFun1);
+      
+     
+          let count = 0;
+      function myFun1(){
+                count++;
+
+                if(count%2!=0){
+                  document.querySelector("#sidemenu").style.display = "inline";
+                }
+                else{
+                  document.querySelector("#sidemenu").style.display = "none";
+                }     
+               
+      }
+      
+
 
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwISDOZwNQFfmsXehyYyUGxObY5en_hmykVxV2pmye9SV6hSt8n_4h7BJ8NlqbrAnEcCQ/exec'
   const form = document.forms['submit-to-google-sheet']
@@ -503,3 +702,9 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "vinitshahilverma", { responsive: true });
+</script>
+
