@@ -1,140 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShahilVerma_Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
 
-    <style>
-         *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgba(84, 154, 154, 0.719);
-            color:black;
-         }
-         #navbar{
-            border: 1px solid;
-            background-color: black;
-            width: 100%;
-            height:64px;
-            position:sticky;
-            top:0px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            z-index: 10;
-         }
-         #navbar>div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-        #navbar>div:first-child>h2{
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ShahilVerma_Portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         /* background-color: rgba(84, 154, 154, 0.719); */
+         background-color: white;
+         color: black;
+      }
+
+      #navbar {
+         border: 1px solid;
+         background-color: black;
+         width: 100%;
+         height: 64px;
+         position: sticky;
+         top: 0px;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         z-index: 10;
+      }
+
+      #navbar>div {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #navbar>div:first-child>h2 {
          background-color: black;
          font-style: italic;
-        }
-        #navbar>div:first-child>h2:first-child{
+      }
+
+      #navbar>div:first-child>h2:first-child {
          color: red;
          background-color: black;
          font-size: 35px;
-        }
-        #navbar>div:first-child>h2:last-child{
+      }
+
+      #navbar>div:first-child>h2:last-child {
          background-color: black;
          font-size: 35px;
-         color:white;
-        }
-         #navbar>div:nth-child(2){
-            background-color: black;
-            width:40%;
-            display: flex;
-            justify-content: space-between;
-         }
-         #navbar h3{
-             text-decoration: none;
-             color: white;
-             background-color: black;
-             border: 2px solid black;
-             
-         }
-         #navbar h3:hover{
-            color: red;
-            border-bottom:2px solid red;
-         }
-         
-         #image{
-            display: block ;
-            margin-left: 100px;
-            margin-top : 50px;
-            display: flex;
-           
-         }
-         #about{
-            padding-left: 120px;
-            padding-right:100px;
-         }
-         #about>h1:first-child{
-            font-size: 80px;
-         }
-         #about>h1:nth-child(2){
-               font-size: 60px;
-              
-         }
-         #about>h1:nth-child(3){
-             font-size: 50px;
-             color: red;
-         }
-         #about h1+p{
+         color: white;
+      }
+
+      #navbar>div:nth-child(2) {
+         background-color: black;
+         width: 40%;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      #navbar h3 {
+         text-decoration: none;
+         color: white;
+         background-color: black;
+         border: 2px solid black;
+
+      }
+
+      #navbar h3:hover {
+         color: red;
+         border-bottom: 2px solid red;
+      }
+
+      #image {
+         /* display: block; */
+         /* margin-left: 100px;
+         margin-top: 50px; */
+         display: grid;
+         width:74%;
+         margin:auto;
+         grid-template-columns: 1fr 2fr;
+         gap: 30px;
+         margin: 20px auto;
+      }
+
+      /* #about {
+         padding-left: 120px;
+         padding-right: 100px;
+      } */
+
+      #about>h1:first-child {
+         margin-top: 40px;
+         font-size: 80px;
+      }
+
+      #about>h1:nth-child(2) {
+         font-size: 60px;
+
+      }
+
+      #about>h1:nth-child(3) {
+         font-size: 50px;
+         color: red;
+      }
+
+      /* #about h1+p{
             margin-top: 80px;
             font-size: 30px;
-         }
-         #image img{
-            display: block;
-            border-radius:30%;
-         }
-         #image img:hover{
-            transform: rotateY(180deg);
-            transition: transform 0.8%;
-         }
-         #skill{
-            width:70%;
-            margin:auto;
-            margin-top:200px;
-          
-            border-radius: 30px;
-            height:250px;
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(1,100px) ; 
-            justify-content: space-between;
-            gap:20px;
-            align-items: center;
-         }
-         #skill> div{
-            border: 5px solid black;
-            border-radius: 12px;  
-         }
-         #skill>div:hover{  
-            border:2px solid orange;
-            border-radius: 30px;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-         }
-         #skill img{
-            display: block;
-            width:100%;
-            border-radius: 30px;
-         }
-         #skill img:hover{
-            background-color: white;
-         }
-         #skill>div:nth-child(4)>img{
+         } */
+      #myself {
+         margin: auto;
+         width: 70%;
+         /* border: 1px solid; */
+      }
+
+      #myself p {
+         font-size: 30px;
+      }
+
+      #image img {
+         display: block;
+         border-radius: 30%;
+      }
+
+      #image img:hover {
+         transform: rotateY(180deg);
+         transition: transform 0.8%;
+      }
+
+      #skill {
+         width: 70%;
+         margin: auto;
+         margin-top: 200px;
+
+         border-radius: 30px;
+         /* height:250px; */
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         justify-content: space-between;
+         gap: 20px;
+         align-items: center;
+      }
+
+      #skill>div {
+         border: 5px solid black;
+         border-radius: 12px;
+         height: 200px;
+      }
+
+      #skill>div:hover {
+         border: 2px solid orange;
+         border-radius: 30px;
+         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+
+      #skill img {
+         display: block;
+         width: 80%;
+         margin: auto;
+         margin-top: 20%;
+         border-radius: 30px;
+      }
+
+      #skill img:hover {
+         background-color: white;
+      }
+
+      /* #skill>div:nth-child(4)>img{
             padding-top: 40px;
             padding-bottom: 40px;
             width:100%;
@@ -143,578 +180,779 @@
             padding-top: 30px;
             padding-bottom: 30px;
             width:100%;
+         } */
+      #hours {
+         width: 70%;
+         height: 550px;
+         margin: auto;
+         border-radius: 20px;
+         margin-bottom: 200px;
+         margin-top: 150px;
+         display: grid;
+         /* border: 1px solid red; */
+      }
+
+      #hours>div {
+         width: 100%;
+         border: 3px solid black;
+         border-radius: 20px;
+         height: 70%;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         /* border: 2px solid; */
+      }
+
+      #hours img {
+         display: block;
+         margin: auto;
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+         border: none;
+      }
+
+      #softskills {
+         width: 70%;
+         height: 250px;
+         margin: auto;
+         margin-bottom: 50px;
+         border-radius: 20px;
+      }
+
+      #softskills>img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+      }
+
+      #github {
+         width: 70%;
+         height: 300px;
+         margin: auto;
+         margin-top: 200px;
+         /* border-radius: 20px; */
+         margin-bottom: 100px;
+         border: 3px solid black;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         border-radius: 15px;
+      }
+
+      #github>img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+      }
+
+      #projects {
+         width: 71%;
+         margin: auto;
+         margin-top: 160px;
+         display: grid;
+         gap: 30px;
+      }
+
+      #projects>div {
+         display: grid;
+         grid-template-columns: 55% 45%;
+         gap: 40px;
+         height: 350px;
+      }
+
+      #projects img {
+         border: 3px solid black;
+         border-bottom-left-radius: 30px;
+         border-top-right-radius: 30px;
+         width: 100%;
+         height: 100%;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+      }
+
+      #footer {
+         border: 1px solid black;
+         background-color: black;
+         width: 100%;
+         height: 250px;
+         margin-top: 150px;
+
+      }
+
+      #footer>div:first-child {
+         display: flex;
+         width: 60%;
+         margin: auto;
+         justify-content: space-between;
+         font-size: 20px;
+         margin-top: 30px;
+         background-color: black;
+      }
+
+      #footer>div:first-child>h3 {
+         color: white;
+         background-color: black;
+      }
+
+      #link {
+         width: 30%;
+         margin: auto;
+         margin-top: 30px;
+         display: grid;
+         justify-content: center;
+         align-items: center;
+         grid-template-columns: repeat(4, 1fr);
+         background-color: black;
+      }
+
+      #footer img {
+         display: block;
+         margin: auto;
+         width: 48%;
+         background-color: black
+      }
+
+      #link>div {
+         background-color: black;
+         margin-left: 0px;
+      }
+
+
+
+      #resume {
+         position: relative;
+         bottom: 12%;
+         margin: auto;
+         display: block;
+         background-color: red;
+         color: white;
+         border: none;
+         border-radius: 12px;
+         padding: 10px;
+         font-size: 18px;
+         z-index: 1;
+      }
+
+      #resume:hover {
+         background-color: rgb(67, 9, 9);
+         cursor: pointer;
+      }
+
+      .verma {
+         padding: 20px;
+         border-top-left-radius: 30px;
+         border-bottom-right-radius: 30px;
+         border: 3px solid;
+         height: 100%;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      .verma>h4 {
+         margin-top: 10px;
+      }
+
+      .verma>h5 {
+         margin-top: 15px;
+      }
+
+      .verma div {
+
+         display: flex;
+         width: 100%;
+         justify-content: space-evenly;
+
+      }
+
+      .verma button {
+         margin-top: 25px;
+         border-radius: 3px;
+         height: 30px;
+         width: 120px;
+         font-size: 14px;
+         font-weight: bold;
+         background-color: black;
+         color: white;
+      }
+
+      .verma button:hover {
+         background-color: red;
+         cursor: pointer;
+      }
+
+      .intro {
+         margin-left: 14%;
+         font-size: 42px;
+         color: red;
+         font-style: italic;
+         margin-top: 100px;
+         margin-bottom: -100px;
+      }
+
+      #contact {
+         margin-top: 150px;
+         width: 350px;
+         margin-left: 40%;
+         display: flex;
+         border: 3px solid black;
+         border-radius: 15px;
+         padding: 20px;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         display: none;
+      }
+
+      #contact h1 {
+         text-align: center;
+      }
+
+      #contact input {
+         display: block;
+         margin-top: 20px;
+         height: 30px;
+         width: 300px;
+         border-radius: 5px;
+         padding-left: 20px;
+      }
+
+      #form>input:nth-child(5) {
+         height: 80px;
+
+      }
+
+      #form>input:nth-child(6) {
+         height: 40px;
+         font-size: 20px;
+         font-weight: 700;
+         width: 100px;
+         padding: 0px;
+         background-color: black;
+         color: white;
+         margin-left: 34%;
+      }
+
+      #touch {
+         margin-top: 150px;
+         margin-bottom: 0px;
+         margin-left: 20%;
+         background-color: black;
+         color: white;
+         height: 50px;
+         font-size: 20px;
+         font-weight: 700;
+         padding: 10px;
+         border-radius: 5px;
+      }
+
+      #touch:hover {
+         cursor: pointer;
+      }
+
+      #msg {
+         width: 330px;
+         text-align: center;
+         margin: auto;
+         margin-top: 20px;
+         background-color: aquamarine;
+         color: black;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      #toogle {
+         position: absolute;
+         right: 20px;
+      }
+
+      #t {
+         color: red;
+         display: none;
+      }
+
+      #sidemenu {
+         width: 250px;
+         height: 700px;
+         display: none;
+         /* border: 1px solid; */
+         position: fixed;
+         z-index: 10px;
+
+      }
+
+      #sidemenu h3 {
+         margin-left: 40px;
+         line-height: 50px;
+         font-size: 30px;
+      }
+
+
+
+
+      @media all and (min-width:601px) and (max-width:1000px) {
+         #myself {
+            width: 85%;
+            text-align: left;
          }
-         #hours{
+
+         #t {
+            display: inline;
+            background-color: black;
+         }
+
+         #navbar {
+            width: 100%;
+         }
+
+         #navbar>div:nth-child(2) {
+            display: none;
+         }
+
+         #image {
+         /* display: grid; */
+         width:90%;
+         /* margin:auto; */
+         grid-template-columns: repeat(1,1fr);
+         
+         margin: 20px auto;
+         }
+
+         #image img {
             width: 70%;
-            height:550px;
             margin: auto;
-            border-radius: 20px;
-            margin-bottom: 350px;
-            margin-top: 150px;
-            display: grid;
-            gap:20px;
-            /* border: 1px solid red; */
+
          }
-         #hours>div{
-            width: 100%;
-            /* height: 300px; */
-            /* border: 2px solid; */
-         }
-         #hours img{
-            display: block;
-            margin: auto;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-         }
-         #softskills{
-            width: 70%;
-            height:250px;
-            margin: auto;
-            margin-bottom: 50px;
-            border-radius: 20px;
-         }
-         #softskills>img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-         }
-         #github{
-            width: 70%;
-            height:300px;
-            margin: auto;
-            margin-top:200px;
-            /* border-radius: 20px; */
-            margin-bottom: 100px;
-            border: 2px solid black;
-         }
-         #github>img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-         }
-         #projects{
-            width:70%;
-            margin:auto;
-            margin-top: 160px;
-            display:grid;
-            gap:30px;
-         }
-         #projects>div{
-           display: grid;
-           grid-template-columns: 60% 40%;
-           gap:40px;
-           height:350px;
-         }
-         #projects img{
-            border: 3px solid black;
-            border-bottom-left-radius: 30px;
-            border-top-right-radius: 30px;
-            width:100%;
-            height:100%;
-         }
-         #footer{
-             border: 1px solid black;
-             background-color: teal;
-             width: 100%;
-             height:250px;
-             margin-top:150px;
-            
-         }
-         #footer>div:first-child{
-            display: flex;
-            width:60%;
-            margin: auto;
-            justify-content: space-between;
-            font-size: 20px;
-            margin-top: 30px;
-            background-color: teal;
-         }
-         #footer>div:first-child>h3{
-             background-color: teal;
-         }
-         #link{
-             width:30%;
-            margin:auto;
-            margin-top:30px;
-             display:grid;
-             justify-content: center;
-             align-items: center;
-             grid-template-columns: repeat(4,1fr);
-         }
-         #footer img{
-            display:block;
-            margin: auto;
-            width:40%;
-            background-color: teal;
-         }
-         #link>div{
-            background-color: teal;
-            margin-left: -50px;
-         }
-         #resume{
-            position: relative;
-            bottom:15%;
-            margin: auto;
-            display: block;
-            background-color: red;
-            color: white;
-            border: none;
-            border-radius: 12px;
-            padding: 10px;
-            font-size: 18px;
-            z-index: 1;
-         }
-         #resume:hover{
-            background-color: rgb(67, 9, 9);
-            cursor: pointer;
-         }
-         .verma{
+
+         #about {
+            margin-top: -150px;
             padding: 20px;
-            border-top-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
          }
-         .verma>h4{
-            margin-top: 10px;
+
+         #resume {
+            margin-top: -10px;
+            margin-bottom: 80px;
          }
-         .verma>h5{
-            margin-top: 15px;
+
+         #skill {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto, 100px);
+            gap: 80px;
+            width: 80%;
          }
-         .verma div{
-          
-            display:flex;
-            width: 100%;
+
+         #hours {
+            margin-top: 150px;
+            margin-bottom: 50px;
+            width: 80%;
+         }
+
+         #softskills {
+            margin-top: 150px;
+            margin-bottom: 50px;
+            width: 80%;
+         }
+
+         #github {
+            height: 200px;
+            width: 80%;
+         }
+
+         #projects {
+            width: 80%;
+         }
+
+         #projects>div {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+         }
+
+         #projects>div:nth-child(2) {
+            margin-top: 50%;
+            margin-bottom: 40%;
+         }
+
+         #projects>div:last-child {
+            margin-top: 10%;
+            margin-bottom: 40%;
+         }
+
+         #contact {
+            margin: auto;
+            margin-top: 30%;
+         }
+
+         #footer {
+            height: 300px;
+         }
+
+         #footer>div:first-child {
+            width: 80%;
+         }
+
+         #footer>div:first-child>h3 {
+            font-size: 18px;
+         }
+
+         #footer>div:last-child {
+            margin-top: 12%;
+            width: 60%;
             justify-content: space-evenly;
          }
-         .verma button{
-            margin-top: 25px;
-            border-radius: 3px;
-            height:30px;
-            width:120px;
-            font-size: 14px;
-            font-weight: bold;
-            background-color: black;
-            color:white;
-         }
-         .verma button:hover{
-            background-color: red;
-            cursor: pointer;
-         }
-        
-         .intro{
-            margin-left:14%;
-            font-size: 42px;
-            color:red;
-            font-style: italic;
-            margin-top: 100px;
-            margin-bottom: -100px;
-         }
-         #contact{
-            margin-top: 150px;
-            width:350px;
-            margin-left: 40%;
-            display: flex;
-            border: 3px solid black;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            display: none;
-         }
-         #contact h1{
-            text-align: center;
-         }
-         #contact input{
-            display: block;
-            margin-top: 20px;
-            height:30px;
-            width:300px;
-            border-radius: 5px;
-            padding-left: 20px;
-         }
-         #form>input:nth-child(5){
-           height:80px;
-           
-         }
-         #form>input:nth-child(6){
-            height:40px;
-            font-size: 20px;
-            font-weight: 700;
-            width:100px;
-            padding: 0px;
-            background-color: black;
-            color: white;
-            margin-left:34%;
-         }
-         #touch{
-            margin-top: 150px;
-            margin-bottom: 0px;
-            margin-left: 20%;
-            background-color: rgb(31, 187, 187);
-            height: 50px;
-            font-size: 20px;
-            font-weight: 700;
-            padding: 10px;
-         }
-         #touch:hover{
-            cursor: pointer;
-         }
-         #msg{
-            width:330px;
-            text-align: center;
-            margin: auto;
-            margin-top:20px;
-            background-color: aquamarine;
-            color:black;
-         }
-         a{
-            text-decoration: none;
-         }
-         #toogle{
-            position: absolute;
-            right:20px;
-         }
-         #t{
-            color: red;
-            display: none;
-         }
-         #sidemenu{
-            width: 250px;
-            height:700px;
-            display: none;
-            /* border: 1px solid; */
-            position: fixed;
-            z-index: 10px;
-           
-         }
-         #sidemenu h3{
-            margin-left: 40px;
-            line-height: 50px;
-            font-size: 30px;
-         }
-         
-         
-         @media all and (min-width:601px) and (max-width:1000px){
-            #t{
-               display: inline;
-               background-color: black;
-            }
-            #navbar{
-               width:100%;
-            }
-            #navbar>div:nth-child(2){
-               display: none;
-            }
-            
-            #image{
-               position: relative;
-               flex-direction: column;
-               width:90%;
-               margin:auto;
-               margin-top: 50px;
-            } 
-            #image img{
-               width:70%;
-               margin:auto;
-               
-            }
-            #about{
-               padding: 20px;
-            }
-             #resume{
-                 margin-top: -80px;
-                 margin-bottom: 80px;
-             }
-             #skill{
-               grid-template-columns: repeat(3,1fr);
-               grid-template-rows: repeat(auto,100px) ;
-               gap:80px;
-               width:80%;
-             }
-            #hours{
-               margin-top: 150px;
-               margin-bottom: 50px;
-               width:80%;
-            }
-            #softskills{
-               margin-top: 150px;
-               margin-bottom: 50px;
-               width:80%;
-            }
-            #github{
-               height:200px;
-               width:80%;
-            }
-            #projects{
-               width:80%;
-            }
-            #projects>div{
-               grid-template-columns: repeat(1,1fr);
-               grid-template-rows: repeat(auto,1fr);
-               gap:10%;
-            
-            }
-            #projects>div:last-child{
-                 margin-top: 50%;
-                 margin-bottom: 40%;
-            }
-            #contact{
-               margin:auto;
-               margin-top: 30%;
-            }
-            
-           #footer{
-              height:300px;
-           } 
-           #footer>div:first-child{
-            width:80%;
-           }
-           #footer>div:first-child>h3{
-             font-size: 18px;
-           }
-           #footer>div:last-child{
-             margin-top:12%;
-              width:60%;
-              justify-content: space-evenly;
-           }
-           #sidemenu{
-               z-index: 20;
-           }
-           
-           
+
+         #sidemenu {
+            z-index: 20;
          }
 
-         @media all and (min-width:280px) and (max-width:600px){
-            #t{
-               display: inline;
-               background-color: black;
-            }
-            #contact{
-               width:300px;
-            }
-            /* #touch{
+
+      }
+
+      @media all and (min-width:280px) and (max-width:600px) {
+         #t {
+            display: inline;
+            background-color: black;
+         }
+
+         #contact {
+            width: 300px;
+         }
+
+         /* #touch{
                width:350px;
             } */
-            #contact input{
-               width:250px;
-            }
-            #navbar{
-               width:100%;
-            }
-            #navbar>div:nth-child(2){
-               display: none;
-            }
-            
-            #image{
-               position: relative;
-               flex-direction: column;
-               width:90%;
-               margin:auto;
-               margin-top: 50px;
-            } 
-            #image img{
-               width:70%;
-               margin:auto;
-               
-            }
-            #about{
-               padding: 20px;
-            }
-            #about>h1:first-child{
-               font-size: 35px;
-            }
-            #about>h1:nth-child(2){
-               font-size: 30px;
-            }
-            #about>h1:nth-child(3){
-               font-size: 30px;
-            }
-            #about h1+p{
-               margin-top: 20px;
-               font-size: 18px;
-            }
-             #resume{
-                 /* position:absolute;
-                 left: 35%; */
-                 margin-top: -80px;
-                 margin-bottom: 80px;
-             }
-             #skill{
-               grid-template-columns: repeat(2,1fr);
-               /* grid-template-rows: repeat(auto,100px) ; */
-               gap:80px;
-               width:80%;
-             }
-            #hours{
-               margin-top: 100px;
-               margin-bottom: 50px;
-               width:90%;     
-            }
-            #hours>div:nth-child(1){
-               margin-bottom:-100px;
-            }
-            #hours>div:nth-child(){
-               margin-bottom:70px;
-            }
-            #softskills{
-               margin-top: 450px;
-               margin-bottom: 50px;
-               width:90%;
-            }
-            #github{
-               height:200px;
-               width:90%;
-            }
-            #projects{
-               width:90%;
-            }
-            #touch{
-               margin-left:8%;
-            } 
-            #projects>div{      
-               grid-template-columns: repeat(1,1fr);
-               grid-template-rows: repeat(1,1fr);
-               gap:10%;
-            }
-            #projects>div:last-child{
-                 margin-top: 80%;
-                 margin-bottom: 40%;
-            }
-            #contact{
-               margin:auto;
-               margin-top: 150px;
-            }
-            
-           #footer{
-              height:300px;
-           } 
-           #footer>div:first-child{
-            width:80%;
+         #contact input {
+            width: 250px;
+         }
+
+         #navbar {
+            width: 100%;
+         }
+
+         #navbar>div:nth-child(2) {
+            display: none;
+         }
+
+         /* #image {
+            position: relative;
             flex-direction: column;
-           }
-           #footer>div:first-child>h3{
-             font-size: 18px;
-           }
-           #footer img{
-            width:50%;
-           }
-           #link>div{
-            margin-left: -20px;
-           }
-           #footer>div:last-child{
-             margin-top:12%;
-              width:80%;
-              justify-content: space-between;
-           }
-           #sidemenu{
-            width:200px;
-               z-index: 20;
-           } 
-           .intro{
-            font-size: 35px;
-           }  
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+         } */
+
+         #image {
+         width:90%;
+         grid-template-columns: repeat(1,1fr);
+         margin: 20px auto;
+         }
+
+         #image img {
+            width: 70%;
+            margin: auto;
+         }
+
+         #about {
+            margin-top: -20px;
           
          }
 
-    </style>
-</head>
-<body>
-      <div id="navbar">
-         <div><h2>Shahil</h2>
-            <h2>Verma</h2>
-         </div>
-         <div>
-            <a href="#image"><h3>About</h3></a>
-            <a href="#skill"><h3>Skills</h3></a>
-            <a href="#projects"><h3>Projects</h3></a>
-            <a href="#footer"><h3>Contact</h3></a>
-            <a href="Shahil_Verma_Resume.pdf" download><h3>Resume</h3></a>
-         </div>
-          <div id="toogle"><i id = "t" class="fa-solid fa-bars"></i></div>
-      </div>
-      <div id="sidemenu">
-            <a href="#image"><h3>About</h3></a>
-            <a href="#skill"><h3>Skills</h3></a>
-            <a href="#projects"><h3>Projects</h3></a>
-            <a href="#footer"><h3>Contact</h3></a>
-            <a href="Shahil_Verma_Resume.pdf" download><h3>Resume</h3></a>
-      </div>
-      
-      <div id="image"><div>
-         <img src="./images/20220905_190447-removebg-preview.jpg" alt="Error">
-      <a href="Shahil_Verma_Resume.pdf" download><button id="resume">Resume</button></a>
-      </div>
-      <div id="about">
-          <h1>Hi,</h1>
-          <h1>I am Shahil Verma</h1>
-          <h1>Java Backend Developer</h1>
-          <p>Aspiring JAVA Backend developer with lots of energy.Possionate about coding. A detail and process-oriented person has the ability to cope with difficult situations. Punctual person and a team player. Looking for an organization where I can give my best.</p>
-      </div>   
-    </div>
-    
-    <h1 class="intro"><u>Skills</u></h1>
-    <div id="skill">
-       <div><img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" alt="java"></div> 
-        <div><img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="html"></div>
-       <div><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png" alt="css"></div> 
-      <div><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="javascript"></div>
-       <div><img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="sql"></div> 
-    </div>
-    
-    <div id="softskills"><img src="./images/soft skills.png" alt="skills"></div>
-    <!-- <div id="hours"><img src="./images/Screenshot (134).png" alt="skills"></div> -->
-    <!-- <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div> -->
-    <h1 class="intro"><u>GitHub Calendar</u></h1>
-   
-    <div class="calendar" id="github">
-      <!-- Loading stuff -->
-      <!-- Loading the data just for you. -->
-    </div>
+         #about>h1:first-child {
+            font-size: 35px;
+         }
 
-    <h1 class="intro"><u>GitHub Statics</u></h1>
-    <div id="hours">
-    <div>
-      <img  src="https://github-readme-stats.vercel.app/api/top-langs?username=vinitshahilverma&show_icons=true&locale=en&layout=compact" alt="vinitshahilverma"  />
+         #about>h1:nth-child(2) {
+            font-size: 30px;
+         }
+
+         #about>h1:nth-child(3) {
+            font-size: 30px;
+         }
+
+         #myself p {
+            font-size: 20px;
+         }
+         #myself{
+            width:90%;
+         }
+
+         #resume {
+            /* position:absolute;
+                 left: 35%; */
+            display: none;
+            width: 100px;
+            margin-top: -50px;
+            margin-bottom: 80px;
+         }
+
+         #skill {
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: repeat(auto,100px) ; */
+            gap: 80px;
+            width: 80%;
+         }
+
+         #skill>div {
+            height: 120px;
+         }
+
+         #skill img {
+            margin-top: 20%;
+            width: 80%;
+         }
+
+         #hours {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            width: 90%;
+         }
+
+         #hours>div:nth-child(1) {
+            margin-top: 30px;
+         }
+
+
+         #softskills {
+            margin-top: 450px;
+            margin-bottom: 50px;
+            width: 90%;
+         }
+
+         #github {
+            height: 180px;
+            width: 90%;
+            margin-top: 150px;
+         }
+
+         #projects {
+            width: 90%;
+         }
+
+         #touch {
+            margin-left: 8%;
+         }
+
+         #projects>div {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10%;
+         }
+
+         #projects>div:last-child {
+            margin-top: 40%;
+            margin-bottom: 70%;
+         }
+
+         #projects>div:nth-child(2) {
+            margin-top: 80%;
+            margin-bottom: 40%;
+         }
+
+         #contact {
+            margin: auto;
+            margin-top: 150px;
+         }
+
+         #footer {
+            height: 300px;
+         }
+
+         #footer>div:first-child {
+            width: 80%;
+            flex-direction: column;
+         }
+
+         #footer>div:first-child>h3 {
+            font-size: 18px;
+         }
+
+         #footer img {
+            width: 50%;
+         }
+
+         #link>div {
+            margin-left: -20px;
+         }
+
+         #footer>div:last-child {
+            margin-top: 12%;
+            width: 80%;
+            justify-content: space-between;
+         }
+
+         #sidemenu {
+            width: 200px;
+            z-index: 20;
+         }
+
+         .intro {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 30px;
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+   <div id="navbar">
+      <div>
+         <h2>Shahil</h2>
+         <h2>Verma</h2>
       </div>
       <div>
-       <img src="https://github-readme-stats.vercel.app/api?username=vinitshahilverma&show_icons=true&locale=en" alt="vinitshahilverma" />
+         <a href="#image">
+            <h3>Home</h3>
+         </a>
+         <a href="#myself">
+            <h3>About</h3>
+         </a>
+         <a href="#skill">
+            <h3>Skills</h3>
+         </a>
+         <a href="#projects">
+            <h3>Projects</h3>
+         </a>
+         <a href="#footer">
+            <h3>Contact</h3>
+         </a>
+         <a href="Shahil_Verma_Resume.pdf" download>
+            <h3 class="resumeDrive">Resume</h3>
+         </a>
+      </div>
+      <div id="toogle"><i id="t" class="fa-solid fa-bars"></i></div>
+   </div>
+   <div id="sidemenu">
+      <a href="#image">
+         <h3>Home</h3>
+      </a>
+      <a href="#myself">
+         <h3>About</h3>
+      </a>
+      <a href="#skill">
+         <h3>Skills</h3>
+      </a>
+      <a href="#projects">
+         <h3>Projects</h3>
+      </a>
+      <a href="#footer">
+         <h3>Contact</h3>
+      </a>
+      <a href="Shahil_Verma_Resume.pdf" download>
+         <h3 class="resumeDrive1">Resume</h3>
+      </a>
+   </div>
+
+   <div id="image">
+
+      <div>
+
+         <img src="./images/shahil-img.jpg" alt="Error">
+         <a href="Shahil_Verma_Resume.pdf" download><button id="resume">Resume</button></a>
+      </div>
+      <div id="about">
+         <h1>Hi,</h1>
+         <h1>I am Shahil Verma</h1>
+         <h1>Java Backend Developer</h1>
       </div>
    </div>
-    
-    <h1 class="intro"><u>My Projects</u></h1>
-    <div id="projects">
-      <div >
-         <img src = "./images/ezgif.com-gif-maker.gif" alt = "intern theory">
+   <div id="myself">
+      <p>Aspiring Java Backend Developer with a good understanding of both Frontend & Backend Technologies. Passionate
+         about coding. Enthusiastic and eager to contribute to the team through hard work. Motivated to learn and grow
+         in Tech Industry. </p>
+   </div>
+
+   <h1 class="intro" style="margin-bottom:-150px;"><u>Skills</u></h1>
+   <div id="skill">
+      <div><img src="./images/java.png" alt="java"></div>
+      <div><img src="./images/springboot.png" alt="springboot"></div>
+      <div><img src="./images/hibernate.png" alt="hibernate"></div>
+      <div><img src="./images/sql.jpg" alt="spl"></div>
+      <div><img src="./images/html.png" alt="html"></div>
+      <div><img src="./images/css.png" alt="css"></div>
+      <div><img src="./images/js.png" alt="JavaScript"></div>
+      <div><img src="./images/github.png" alt="github"></div>
+      <div><img src="./images/netlify.png" alt="netlify"></div>
+      <div><img src="./images/aws.png" alt="aws"></div>
+   </div>
+
+   <!-- <div id="softskills"><img src="./images/soft skills.png" alt="skills"></div> -->
+   <!-- <div id="hours"><img src="./images/Screenshot (134).png" alt="skills"></div> -->
+   <!-- <div id="github"><img src="./images/Screenshot (119).png" alt="github"></div> -->
+   <h1 class="intro" style="margin-top:30px;"><u>GitHub Calendar</u></h1>
+
+   <div class="calendar" id="github">
+      <!-- Loading stuff -->
+      <!-- Loading the data just for you. -->
+   </div>
+
+   <h1 class="intro" style="margin-top:-70px;"><u>GitHub Statics</u></h1>
+   <div id="hours">
+      <div>
+         <img
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=vinitshahilverma&show_icons=true&locale=en&layout=compact"
+            alt="vinitshahilverma" />
+      </div>
+      <div>
+         <img src="https://github-readme-stats.vercel.app/api?username=vinitshahilverma&show_icons=true&locale=en"
+            alt="vinitshahilverma" />
+      </div>
+   </div>
+
+   <h1 class="intro" style="margin-top:-80px; margin-bottom:-120px"><u>My Projects</u></h1>
+   <div id="projects">
+      <div>
+         <img src="./images/ezgif.com-gif-maker.gif" alt="intern theory">
          <div class="verma">
             <h2>Intern Theory</h2>
-            <h4>It's a website to provide the solution for those who are serching for the jobs and interships. You can search jobs and Internships by
+            <h4>It's a website to provide the solution for those who are serching for the jobs and interships. You can
+               search jobs and Internships by
                location, By your profile type and And by job type like full time, part time or work from home.
             </h4>
             <h5>It was a collaborative of 7 members and we completed the project in 4 days</h5>
             <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
             <div><a href="https://github.com/vinitshahilverma/Intern-Theory-Project"><button>Source Code</button></a>
-               <a href="https://adorable-nougat-3048be.netlify.app/"><button>Deployed Link</button></a></div>
+               <a href="https://adorable-nougat-3048be.netlify.app/"><button>Deployed Link</button></a>
+            </div>
          </div>
       </div>
+
       <div>
-         <img src = "./images/ezgif.com-gif-maker (1).gif" alt = "gym wolf">
-         <div class = "verma">
+         <img src="./images/ezgif.com-gif-maker (1).gif" alt="gym wolf">
+         <div class="verma">
             <h2>Gym wolf</h2>
-            <h4>Gymwolf is a workout tracking tool. Add workouts, create your own customized workout plans or find suitable plan from other users. Accomplish your goals with motivation from personal trainer and committed training.</h4>
+            <h4>Gymwolf is a workout tracking tool. Add workouts, create your own customized workout plans or find
+               suitable plan from other users. Accomplish your goals with motivation from personal trainer and committed
+               training.</h4>
             <h5>It was a collaborative of 5 members and we completed the project in 4 days</h5>
             <h5>Tech Stack:- HTML,CSS,JavaScript</h5>
             <div><a href="https://github.com/vinitshahilverma/rough-stone-6895"><button>Source Code</button></a>
-               <a href="https://drive.google.com/file/d/1j-Zp6QeFpNyIMP27qPkXHWAKPvmZjxq7/view?usp=sharing"><button>Video Link</button></a></div>
+               <a href="https://drive.google.com/file/d/1j-Zp6QeFpNyIMP27qPkXHWAKPvmZjxq7/view?usp=sharing"><button>Video
+                     Link</button></a>
+            </div>
          </div>
       </div>
-    </div>
 
-      <h1 class="intro"><u>Contact Me</u></h1>
-       <button id="touch">Click Here to get In touch >>></button>
+      <div>
+         <img src="./images/TableSchema.png" alt="intern theory">
+         <div class="verma">
+            <h2>SoulFood</h2>
+            <h4>It is an online food delivey application.Where a person can order the food online
+               from multiple restaurants.
+               It is basically a java backedend project and we have created the Api's for an 
+               online food delivery application.
+            </h4>
+            <h5>It was a collaborative of 5 members and we completed the project in 4 days</h5>
+            <h5>Tech Stack:- Java,Springboot,MySQL,</h5>
+            <div><a href="https://github.com/vinitshahilverma/wide-eye-6503"><button>Source Code</button></a>
+               <a href="https://drive.google.com/drive/folders/1TGvmS1c7KaiXhYA6lSWSxQFlEZREkaJx"><button>Video Link</button></a>
+            </div>
+         </div>
+      </div>
+   </div>
 
-        <div id="contact"><form id="form" name="submit-to-google-sheet">
+   <h1 class="intro" style="margin-top:70px;"><u>Contact Me</u></h1>
+   <button id="touch">Click Here to get In touch >>></button>
+
+   <div id="contact">
+      <form id="form" name="submit-to-google-sheet">
          <h1>Get In Touch</h1>
          <input type="text" id="name" name="Name" required placeholder="Your Name">
          <input type="email" id="email" name="Email" required placeholder="Your Email">
@@ -724,71 +962,86 @@
       </form>
    </div>
    <div id="msg"></div>
-      <div id="footer">
-         <div>
-            <h3>Email:- vinitshahilverma@gamil.com</h3>
-            <h3>whatsapp:-+91 7858869609</h3>
-         </div>
-       <div id="link">
-         <div><a href="https://www.linkedin.com/in/shahil-verma/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt=""></a></div>
-       <div><a href="https://api.whatsapp.com/send/?phone=7858869609&text&app_absent=0"><img src="./images/whatsapp.png" alt="whatsapp"></a></div>
-       <div><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfGgTxGllMwXTdcbNdJshbNxrcjPlWnFmNrZLjqQkpBkjcnpmJTWDfXHMjXTbgwmXRJH"><img src="./images/email.png" alt="email"></a></div>
-       <div><a href="https://github.com/vinitshahilverma"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a></div>
-       </div>
-      </div> 
+   <div id="footer">
+      <div>
+         <h3>Email:- vinitshahilverma@gamil.com</h3>
+         <h3>whatsapp:-+91 7858869609</h3>
+      </div>
+      <div id="link">
+         <div><a href="https://www.linkedin.com/in/shahil-verma/"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
+                  alt=""></a></div>
+         <div><a href="https://api.whatsapp.com/send/?phone=7858869609&text&app_absent=0"><img
+                  src="./images/whatsapp.png" alt="whatsapp"></a></div>
+         <div><a
+               href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCfGgTxGllMwXTdcbNdJshbNxrcjPlWnFmNrZLjqQkpBkjcnpmJTWDfXHMjXTbgwmXRJH"><img
+                  src="./images/blueemail.jpg" alt="email"></a></div>
+         <div><a href="https://github.com/vinitshahilverma"><img src="./images/github png.png" alt="github"></a></div>
+      </div>
+   </div>
 </body>
+
 </html>
 
 <script>
-       document.querySelector("#touch").addEventListener("click",myFun);
+   document.querySelector("#touch").addEventListener("click", myFun);
 
-      function myFun(){
-          
-         let que = document.querySelector("#touch");
-        
-         que.style.display = "none";
-         
-         document.querySelector("#contact").style.display = "flex";
+   function myFun() {
+
+      let que = document.querySelector("#touch");
+
+      que.style.display = "none";
+
+      document.querySelector("#contact").style.display = "flex";
+   }
+
+   document.querySelector("#toogle").addEventListener("click", myFun1);
+
+
+   let count = 0;
+   function myFun1() {
+      count++;
+
+      if (count % 2 != 0) {
+         document.querySelector("#sidemenu").style.display = "inline";
+      }
+      else {
+         document.querySelector("#sidemenu").style.display = "none";
       }
 
-      document.querySelector("#toogle").addEventListener("click",myFun1);
-      
-     
-          let count = 0;
-      function myFun1(){
-                count++;
+   }
 
-                if(count%2!=0){
-                  document.querySelector("#sidemenu").style.display = "inline";
-                }
-                else{
-                  document.querySelector("#sidemenu").style.display = "none";
-                }     
-               
-      }
+   document.querySelector(".resumeDrive").addEventListener("click", myFun2);
+   document.querySelector("#resume").addEventListener("click", myFun2);
+   document.querySelector(".resumeDrive1").addEventListener("click", myFun2);
+
+   function myFun2() {
+
+      window.location.href = "https://drive.google.com/drive/folders/1KhhlxRNyAu0Qjs06UkaR90RpcuJRzAE6";
+
+   }
 
 
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwISDOZwNQFfmsXehyYyUGxObY5en_hmykVxV2pmye9SV6hSt8n_4h7BJ8NlqbrAnEcCQ/exec'
-  const form = document.forms['submit-to-google-sheet']
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwISDOZwNQFfmsXehyYyUGxObY5en_hmykVxV2pmye9SV6hSt8n_4h7BJ8NlqbrAnEcCQ/exec'
+   const form = document.forms['submit-to-google-sheet']
 
-  const msg=document.getElementById("msg");
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML="Message Sent Successfully";
-        setTimeout(()=>{
-            msg.innerHTML="";
-        },5000);
-        form.reset();
-    })
-      .catch(error => console.error('Error!', error.message))
-  })
+   const msg = document.getElementById("msg");
+   form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+         .then(response => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(() => {
+               msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+         })
+         .catch(error => console.error('Error!', error.message))
+   })
 </script>
 
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script>
-  GitHubCalendar(".calendar", "vinitshahilverma", { responsive: true });
+   GitHubCalendar(".calendar", "vinitshahilverma", { responsive: true });
 </script>
-
