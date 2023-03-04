@@ -197,11 +197,14 @@
          width: 100%;
          border: 3px solid black;
          border-radius: 20px;
-         height: 70%;
+         height: 300px;
          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
          /* border: 2px solid; */
       }
-      
+    
+      #hours>div:nth-child(2) {
+        margin-top: 40px;
+      } 
 
       #hours img {
          display: block;
@@ -249,7 +252,7 @@
       #projects {
          width: 71%;
          margin: auto;
-         margin-top: 160px;
+         margin-top: 170px;
          display: grid;
          gap: 30px;
       }
@@ -538,10 +541,15 @@
          }
 
          #hours {
-            margin-top: 150px;
-            margin-bottom: 50px;
+            margin-top: 70px;
+            margin-bottom: 70px;
             width: 80%;
          }
+
+         #hours>div{
+            height:200px;
+         }
+
 
          #softskills {
             margin-top: 150px;
@@ -708,10 +716,18 @@
             width: 90%;
          }
 
-         #hours>div:nth-child(1) {
-            margin-top: 30px;
+         #hours>div{
+            height:200px;
          }
 
+         #hours>div:nth-child(1) {
+            margin-top: -50px;
+         }
+         
+         #hours>div:nth-child(2) {
+            margin-top: -50px;
+            
+         }
 
          #softskills {
             margin-top: 450px;
@@ -722,7 +738,7 @@
          #github {
             height: 180px;
             width: 90%;
-            margin-top: 150px;
+            margin-top: 50px;
          }
 
          #projects {
@@ -743,6 +759,7 @@
             margin-top: 40%;
             margin-bottom: 70%;
          }
+
 
          #projects>div:nth-child(2) {
             margin-top: 80%;
